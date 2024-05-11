@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    color: rgb(240, 240, 240);
+}
+
+body{
+    height: 100%;
+    background-image: url(WhatsApp\ Image\ 2023-10-10\ at\ 9.48.55\ AM.jpeg);
+    background-repeat: no-repeat ;
+    background-size: 2160px;
+}
+
+.menu-btn{
+    color: aliceblue;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: rgb(78, 0, 0);
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+}
+
+
+.wholebody{
+    font-family: Arial, sans-serif;     
+    background-image: url(account\ back\ page.png);     
+    display: flex;     
+    justify-content: center;     
+    align-items: center;     
+    height: 100vh;   
+    margin: 0;
+}
+
+.navbar.logo h1{
+    color: darkgray;
+    border-bottom: 4px solid#fd65;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display:block;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li .active{
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+.navbar .menu li a i{
+    color: #ffffff;
+}
+
+.navbar .menu li a:hover{
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+.container {
+    max-width: 400px;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content{
+    left: 10%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color:rgb(255, 255, 255);
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color:crimson;
+
+}
+.content button{
+   margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: rgb(165, 46, 46);
+    color:white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size:60px;
+    margin-bottom:-14px;
+}

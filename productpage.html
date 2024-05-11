@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+    <link rel="stylesheet" href="product page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>MMM Shops</h1></div>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5501/ECOMMERCE.html" class="active">Back To Home</a></li>
+        </ul>
+        </nav>
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="img/p1.png">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="img/p1.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/p2.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/p3.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/p4.png" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="url">Home > T-Shirt</div>
+            <div class="pname">My life and my rules t shirt</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">Rs 2,399.00</div>
+            <div class="size">
+                <p>Size :</p>
+                <div class="psize active">M</div>
+                <div class="psize">L</div>
+                <div class="psize">XL</div>
+                <div class="psize">XXL</div>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="2" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn" onclick="document.location='http://127.0.0.1:5501/addtocart.html'">Add to cart</button>
+                <button class="buy-btn" onclick="document.location='http://127.0.0.1:5501/addtocart.html'">Buy Now</button>
+            </div>
+            <div class="reviews-container">
+                <div class="review">
+                  <div class="author">Manwinder Singh</div>
+                  <div class="date">January 29, 2023</div>
+                  <div class="rating">★★★★★</div>
+                  <div class="content">
+                    <p>Great product! I love it.</p>
+                  </div>
+                </div>
+            
+                <div class="review">
+                  <div class="author">Manshika</div>
+                  <div class="date">February 15, 2023</div>
+                  <div class="rating">★★★☆☆</div>
+                  <div class="content">
+                    <p>Good service and quality, size was ok</p>
+                  </div>
+                </div>
+            </div>
+                  <div class="reviews-container">
+                    <div class="review">
+                      <div class="author">Mansi</div>
+                      <div class="date">January 1, 2023</div>
+                      <div class="rating">★★★★★</div>
+                      <div class="content">
+                        <p>quality and stuff was ok</p>
+                      </div>
+                    </div>
+                
+                    <div class="review">
+                      <div class="author">Jane Smith</div>
+                      <div class="date">February 21, 2023</div>
+                      <div class="rating">★★★☆☆</div>
+                      <div class="content">
+                        <p>improvement is needed</p>
+                      </div>
+            </div>
+        </div>
+    <footer>
+        <p>Copyrights at <a href="">MMM Shops</a></p>
+    </footer>
+    <div class="social-icons">
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .reviews-container {
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .review {
+          border-bottom: 1px solid #ddd;
+          padding: 10px;
+        }
+    
+        .review .author {
+          font-weight: bold;
+        }
+    
+        .review .date {
+          color: #888;
+        }
+    
+        .review .rating {
+          color: #ffd700; /* gold color for stars */
+        }
+    
+        .review .content {
+          margin-top: 10px;
+        }
+      </style>
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+
+</body>
+
+</html>

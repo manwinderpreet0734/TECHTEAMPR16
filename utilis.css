@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 100;
+    font-family: initial;
+    color: rgb(74, 4, 4);
+    font-size: x-large;
+}
+
+body{
+    height: 50%;
+}
+
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: rgb(245, 243, 240);
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+}
+
+.navbar.logo h1{
+    color: darkgray;
+    border-bottom: 4px solid#fd65;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display:block;
+    margin-left: 10px;
+    color: black;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li .active{
+    border-bottom: 8px solid red;
+}
+.navbar .menu li a i{
+    color: #000000;
+}
+
+.pheading{
+    font-family: initial;
+    background-color: rgb(72, 4, 4);
+    color: white;
+}
+
+.sec{
+    padding: 10px 5%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    margin-bottom: 0%;
+    margin-top: 40px;
+}
+
+.products .card{
+    width: 310px;
+    background :white;
+    box-shadow: 0 10px 20px black; 
+    border-radius: 15px; 
+    padding: 1px; 
+    margin-bottom: 30px;
+}
+   
+.products .card img{
+       height: 260px;
+       width: 100%;
+}
+   
+.products .card .desc{
+       padding: 5px 20px;
+       opacity: 0.8;
+       font-size: medium;
+}
+   
+.products .card .title{
+       font-weight: 900;
+       font-size: 20px;
+       color: black;
+       padding: 0 20px;
+}
+   
+.products .card .box{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+}
+   
+.products .card .box .price{
+       color: rgb(86, 4, 4);
+       font-size: 20px;
+       font-weight: bold;
+   
+}
+   
+.products .card .box .btn{
+       font-size: 13px;
+       color: black;
+       padding: 10px 18px;
+       font-weight: 900;
+       border: 1px solid rgb(86, 5, 5);
+       border-radius: 20px;
+}
+   
+.products .card .box .btn:hover{
+       cursor: pointer;
+       background-color: rgb(92, 11, 11);
+       color: white;
+}
+
+footer{
+    background-color: white;
+    height: 10vh;
+    font-size: large;
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}

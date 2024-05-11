@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    color: rgb(66, 3, 3);
+}
+
+body{
+    height: 100%;
+}
+
+.menu-btn{
+    color: aliceblue;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    background-color: rgb(245, 243, 240);
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+}
+
+.wholebody{
+    font-family: Arial, sans-serif;     
+    background-image: url(account\ back\ page.png);     
+    display: flex;     
+    justify-content: center;     
+    align-items: center;     
+    height: 100vh;   
+    margin: 0;
+}
+
+.navbar.logo h1{
+    color: darkgray;
+    border-bottom: 4px solid#fd65;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display:block;
+    margin-left: 20px;
+    color: black;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li .active{
+    border-bottom: 4px solid red;
+}
+.navbar .menu li a i{
+    color: #000000;
+}
+
+.navbar .menu li a:hover{
+    border-bottom: 4px solid red;
+}
+.container {
+    max-width: 400px;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group button {
+    width: 110%;
+    padding: 10px;
+    background-color: rgb(121, 7, 7);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: rgb(95, 7, 7);
+}
+.switch-form {
+    text-align: center;
+}
+.switch-form a {
+    text-decoration: none;
+    color: rgb(210, 12, 12);
+}

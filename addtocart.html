@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="addtocart.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 2000px;
+      margin: 100px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 80px 0;
+    }
+
+    .product img {
+      max-width: 80px;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1;
+      padding-left: 30px;
+    }
+
+    .product-title {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #000000;
+      font-size: 1em;
+      margin-top: 20px;
+    }
+
+    .quantity-input {
+      width: 50px;
+      padding: 5px;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .remove-button {
+      background-color: #76040f;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cart-total {
+      margin-top: 50px;
+      text-align: right;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .checkout-button {
+      display: block;
+      margin-top: 20px;
+      background-color: rgb(145, 14, 0);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    footer{
+      background-color: white;
+      height: 10vh;
+      font-size: large;
+  }
+  
+  footer p{
+      text-align: center;
+      line-height: 10vh;
+  }
+  
+  footer p a{
+      text-decoration: none;
+      color: red;
+      font-weight: bold;
+  }
+  
+  .social-icons {
+      text-align: center;
+      margin-top: 0%;
+      font-size: xx-large;
+  }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>MMM Shops</h1></div>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5501/productpage.html" class="active">Back To product</a></li>
+        </ul>
+        </nav>
+
+  <div class="container">
+    <div class="product">
+      <img src="p1.png" alt="Product 1">
+      <div class="product-details">
+        <div class="product-title">My life and my rules t shirt</div>
+        <div class="product-price">Rs 2,399.00</div>
+      </div>
+      <input type="number" class="quantity-input" value="1" min="1" max="10">
+      <button class="remove-button">Remove</button>
+    </div>
+
+    <div class="product">
+      <img src="newarrivals.1.jpg" alt="Product 2">
+      <div class="product-details">
+        <div class="product-title">Regular Fit Jacket with corduroy collar</div>
+        <div class="product-price">Rs 4,999.00</div>
+      </div>
+      <input type="number" class="quantity-input" value="2" min="1" max="10">
+      <button class="remove-button">Remove</button>
+    </div>
+
+    <div class="cart-total">Total: Rs 7,398.00</div>
+    <a href="#" class="checkout-button">Proceed to Checkout</a>
+  </div>
+  <footer>
+    <p>Copyrights at <a href="">MMM Shops</a></p>
+</footer>
+<div class="social-icons">
+    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+</body>
+</html>

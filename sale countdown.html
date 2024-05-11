@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>FEE PROJECT</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>MMM Shops</h1></div>
+        <ul class="menu">
+            <li><a href="http://127.0.0.1:5501/ECOMMERCE.html" class="active">Back To Home</a></li>
+        </ul>
+        </nav>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="fireworks.css">
+        </head>
+        
+        <body>
+            <canvas id="Canvas"></canvas>
+            <script src="fireworks.js"></script>
+        </body>
+        <div class="content">
+            <p>Keep your eyes open and your inbox refreshed!!</p>
+            <h1>We're <span>Launching</span> Soon</h1>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <button type="button">Starting Soon</button>
+        </div>
+        <script>
+            var countDownDate = new Date("dec 20,2023 00:00:00").getTime()
+            var x =setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+        
+                var days = Math.floor(distance/ (1000*60*60*24));
+                var hours = Math.floor(distance% (1000*60*60*24)/(1000*60*60));
+                var minutes = Math.floor(distance% (1000*60*60)/(1000*60));
+                var seconds = Math.floor(distance% (1000*60)/1000);
+        
+                document.getElementById("days").innerHTML=days;
+                document.getElementById("hours").innerHTML=hours;
+                document.getElementById("minutes").innerHTML=minutes;
+                document.getElementById("seconds").innerHTML=seconds;
+        
+                if(distance < 0){
+                    clearInterval(x);
+                document.getElementById("days").innerHTML="00";
+                document.getElementById("hours").innerHTML="00";
+                document.getElementById("minutes").innerHTML="00";
+                document.getElementById("seconds").innerHTML="00";
+        
+                }
+        
+        
+            },1000);
+        </script>
+</body>     
